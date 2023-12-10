@@ -1,7 +1,11 @@
 // This function should execute the callback function the number of times specified.
 // When the function is being executed, the repetition number (i.e. 1 for the first call)
 // should be passed to the callback.
-const repeatFn = (times, callback) => {};
+  const repeatFn = (times, callback) => {
+    for(let i=0;i<times;i++){
+           callback(i+1)
+    }
+  };
 
 // Test repeatFn
 const addButton = num => {
@@ -20,3 +24,18 @@ const toThePower = (num, pow) => {
 };
 
 console.log(toThePower(3, 3));
+// const repeatFn = (num,callback) =>{
+//   for(let i=0;i<num;i++){
+//     callback(i)
+//   }
+// }
+// const doubleNumber = (num) => {
+//   console.log(num * 2)
+// }
+// // repeatFn(5,(param) =>{
+// //   console.log(param)
+// // })
+// repeatFn(5,doubleNumber(10))
+
+
+//https://github.com/getify/You-Dont-Know-JS/tree/2nd-ed
